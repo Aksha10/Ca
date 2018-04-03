@@ -1,0 +1,54 @@
+<!-- @author Akshata Shivade
+    @Description Calculator code
+--> 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- @Description  Title of the HTML page -->
+        <title>Calculator</title>
+
+        <!-- @Description Link of the JavaScript file -->
+        
+        <link rel="stylesheet" type="text/css" href="/home/trainee7/Desktop/css/calculator/styleCalc.css">
+        <script src="/home/trainee7/Desktop/css/calculator/scriptCalc.js" type="text/javascript"></script>
+    </head>
+    <body>
+        
+        <div class="box">
+
+        <!-- @Description Heading of the HTML page -->
+        <h1 id="h2">Calculator</h1>
+
+        <!-- @Description Taking input from the user using textboxes -->
+        <small>Enter Expression:</small><br>
+         <input type="text" id="tx1" class="textbox"><br><br><br>
+        
+         <!-- @Description button operation -->
+         
+        <button type="button" id="55" class="button1 button2" onclick="numbers('7')">7</button>
+        <button type="button" id="56" class="button1 button2" onclick="numbers('8')">8</button>
+        <button type="button" id="57" class="button1 button2" onclick="numbers('9')">9</button>
+        <button type="button" id="43" onclick="numbers('+')" class="button">+</button><br><br>
+        <button type="button" id="52" class="button1 button2" onclick="numbers('4')">4</button>
+        <button type="button" id="53" class="button1 button2" onclick="numbers('5')">5</button>
+        <button type="button" id="54" class="button1 button2" onclick="numbers('6')">6</button>
+        <button type="button" id="45" onclick="numbers('-')" class="button">-</button><br><br>
+        <button type="button" id="49" class="button1 button2" onclick="numbers('1')">1</button>
+        <button type="button" id="50" class="button1 button2" onclick="numbers('2')">2</button>
+        <button type="button" id="51" class="button1 button2" onclick="numbers('3')">3</button>
+        <button type="button" id="42" onclick="numbers('*')"class="button">*</button><br><br>
+        <button type="button" class="button1 button2" onclick="myFunction1()">C</button>
+        <button type="button" id="48" class="button1 button2" onclick="numbers('0')">0</button>
+        <button type="button" id="46" class="button1 button2" onclick="numbers('.')">.</button>      
+        <button type="button" id="47" onclick="numbers('/')" class="button">/</button><br><br>
+        <button type="button" class="button2 button3" onclick="equal()">=</button>
+         
+        <p id="tx1"></p>
+       
+    </div>      
+    </body>  
+</html>
+
+
+

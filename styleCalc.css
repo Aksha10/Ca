@@ -1,0 +1,89 @@
+/**
+ * @author Akshata 
+ * @description code for calculator following BODMAS rule
+ */
+
+
+.box{
+    width: 400px; 
+    height: 550px; 
+    background: linear-gradient(to top,rgb(241, 7, 85), rgb(255, 136, 0)); 
+    margin: 0 auto; 
+    box-shadow:7px 7px 5px rgb(185, 184, 184) ; 
+    text-align: center; 
+}
+
+#h2{
+    text-align: center; 
+    padding:10px; 
+    color: whitesmoke;  
+    text-shadow: 1px 1px 3px rgb(241, 7, 85); 
+}
+
+.button{  
+    background-color:whitesmoke; 
+    color:rgb(255, 136, 0); 
+    border: 1px solid rgb(241, 7, 85);  
+    padding: 18px,35px; 
+    width: 43px;
+    height: 40px;
+    font-size: 25px; 
+    text-align: center; 
+    border-radius: 23px;
+    font-weight: bold; 
+    margin-left: 25px;   
+}
+
+button:hover
+{
+	background-color: rgb(241, 7, 85); 
+    color: white; 
+    box-shadow:5px 5px 5px rgba(0,0,0,0.24);
+}
+
+.textbox{
+    background-color:whitesmoke; 
+    color:rgb(241, 7, 85); 
+    border: 1px solid rgb(241, 7, 85) ;
+    padding: 15px,32px;
+    width: 200px; 
+    height: 30px; 
+    font-size: 100%; 
+    text-align: center; 
+    border-radius: 6px; 
+    font-weight: bold; 
+}
+
+small{
+    color:whitesmoke; 
+    font-size: 17px; 
+    font-weight: bold; 
+}
+
+p{
+    color:whitesmoke; 
+    font-size: 20px; 
+    font-weight:bold; 
+}
+
+.button2{
+    color: rgb(255, 136, 0); 
+    border: 1px solid rgb(241, 7, 85); 
+    background-color: whitesmoke; 
+    font-weight: bold; 
+    font-size: 20px; 
+    text-align: center;
+    margin-left: 10px;   
+    height: 30px; 
+    border-radius: 6px; 
+}
+
+.button1{
+    width: 70px; 
+   
+}
+
+.button3{
+    width: 310px; 
+}
+
