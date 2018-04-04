@@ -6,10 +6,9 @@
 var expression="";
 
 /** 
- * @function numbers(val):array
+ * @function numbers(val):string
  * @description taking input from the textbox and appending that input using "|"
- * @param {array} val
- * @returns {array} expression  
+ * @param {array} val 
  */
 function numbers(val){
 	document.getElementById('tx1').value += val;	
@@ -41,7 +40,7 @@ function equal(){
 	
 }
 
-/** @function calculation(inputNo)
+/** @function calculation(inputNo):array
  *  @description calculating expression and prints the result
  *  @param {array} inputNo 
  */
