@@ -6,10 +6,9 @@
 var expression="";
 
 /** 
- * @function numbers(val):array
+ * @function numbers(val):string
  * @description taking input from the textbox and appending that input using "|"
  * @param {array} val
- * @returns {array} expression  
  */
 function numbers(val){
 	document.getElementById('tx1').value += val;	
@@ -41,7 +40,7 @@ function equal(){
 	
 }
 
-/** @function calculation(inputNo)
+/** @function calculation(inputNo):array
  *  @description calculating expression and prints the result
  *  @param {array} inputNo 
  */
@@ -58,10 +57,8 @@ function calculation(inputNo)
 		{
 			number1=index-1;
 			number2=index+1;
-			answer = parseFloat(inputNo[number1]) / parseFloat(inputNo[number2]);
-			inputNo.splice(index, 2);	
-			inputNo[number1]=answer.toString();
-			console.log(inputNo);		
+			answer = parseFloat(inputNo[number1]) / parseFloat(inputNo[number2]);	
+			spliceNo(inputNo,answer,index);	
 		}
 		index +=1;
 	});
@@ -75,9 +72,7 @@ function calculation(inputNo)
 			number1=index-1;
 			number2=index+1;
 			answer = parseFloat(inputNo[number1]) * parseFloat(inputNo[number2]);
-			inputNo.splice(index, 2);	
-			inputNo[number1]=answer.toString();
-			console.log(inputNo);	
+			spliceNo(inputNo,answer,index);
 		}
 		index +=1;
 	});
@@ -90,9 +85,7 @@ function calculation(inputNo)
 			number1=index-1;
 			number2=index+1;
 			answer = parseFloat(inputNo[number1]) + parseFloat(inputNo[number2]);	
-			inputNo.splice(index, 2);	
-			inputNo[number1]=answer.toString();
-			console.log(inputNo);	
+			spliceNo(inputNo,answer,index);
 		}
 		index +=1;
 	});
@@ -105,14 +98,23 @@ function calculation(inputNo)
 			number1=index-1;
 			number2=index+1;
 			answer = parseFloat(inputNo[number1]) - parseFloat(inputNo[number2]);	
-			inputNo.splice(index, 2);	
-			inputNo[number1]=answer.toString();
-			console.log(inputNo);	
+			spliceNo(inputNo,answer,index);
 		}
 		index +=1;
 	});
 	index=0;
 	document.getElementById('tx1').value = answer;
+}
+
+/**
+ * @function spilceNo(inputNo,answer,index): array and two variables
+ * @description splice input number and storing answer into input number 1
+ * @param {array} inputNo,answer,index
+ */
+function spliceNo(inputNo,answer,index){
+	inputNo.splice(index, 2);	
+	inputNo[number1]=answer.toString();
+	console.log(inputNo);
 }
 
 
