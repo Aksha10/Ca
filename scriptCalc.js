@@ -8,7 +8,7 @@ var expression="";
 /** 
  * @function numbers(val):string
  * @description taking input from the textbox and appending that input using "|"
- * @param {array} val
+ * @param {array} val 
  */
 function numbers(val){
 	document.getElementById('tx1').value += val;	
